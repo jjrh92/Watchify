@@ -1,0 +1,26 @@
+.watchListContainer {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: auto;
+  background-color: #e5f0ff;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  inline-size: 100%;
+}
+
+.watchListCaption {
+  margin-left: 40px;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 100%;
+  color: #233647;
+}
+
+.contentCardContainer {
+  display: flex;
+  gap: 46px;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 40px 10px;
+}

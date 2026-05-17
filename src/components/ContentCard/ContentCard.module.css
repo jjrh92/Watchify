@@ -1,0 +1,30 @@
+.ContentCard {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  height: 255px;
+  width: 182px;
+  cursor: pointer;
+}
+
+.contentCardButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: #233647;
+  border-radius: 27px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.contentCardButton:hover {
+  background-color: green;
+}
+
+.savedImage {
+  height: 16px;
+  width: 16px;
+}

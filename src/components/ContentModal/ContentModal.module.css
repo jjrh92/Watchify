@@ -1,0 +1,141 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 65%);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.modalDialog {
+  width: min(960px, 92vw);
+  max-height: 88vh;
+  overflow: auto;
+  background: #0f0f10;
+  color: #f3f4f6;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgb(0 0 0 / 60%);
+  outline: none;
+}
+
+.modalHeader {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgb(255 255 255 / 10%);
+}
+
+.modalTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.modalClose {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: #e5e7eb;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modalClose:hover {
+  color: #fff;
+}
+
+.modalBody {
+  padding: 16px;
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 16px;
+}
+
+.detailPoster {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgb(0 0 0 / 35%);
+}
+
+.detailMeta {
+  display: grid;
+  gap: 12px;
+}
+
+.detailTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.detailChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: start;
+  align-items: center;
+}
+
+.chip {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  background: #1f2937;
+  color: #e5e7eb;
+  border: 1px solid rgb(255 255 255 / 10%);
+}
+
+.detailOverview {
+  margin: 4px 0 0;
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+.detailBackdrop {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  opacity: 0.9;
+  border: 1px solid rgb(255 255 255 / 10%);
+}
+
+.actionRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid rgb(255 255 255 / 14%);
+  background: #2563eb;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+}
+
+.secondary {
+  background: transparent;
+  color: #e5e7eb;
+}
+
+.secondary:hover {
+  background: rgb(255 255 255 / 06%);
+}

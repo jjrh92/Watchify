@@ -1,0 +1,130 @@
+.Hero {
+    height: 567px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.heroContainer {
+    width: 668px;
+    height: 399px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 40px;
+    gap: 22px;
+}
+
+.scoreContainer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+    width: 158px;
+    height: 48px;
+}
+
+.scoreCaption {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.scoreStarRatingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+
+
+.scoreRating {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.titleYearGenreContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 160px;
+    width: 100%;
+    gap: 8px;
+}
+
+.contentTitle {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0;
+    width: 100%;
+
+}
+
+.titleYearGenreText {
+    font-size: 24px;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.contentDescription {
+    display: flex;
+    color: white;
+    width: 668px;
+    height: 77px;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 180%;
+    margin-top: 40px;
+}
+
+.heroButtonContainer {
+    display: flex;
+    width: 664px;
+    height: 48px;
+    gap: 44px;
+    margin-top: 30px;
+}
+
+.trailerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #233647;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    width: 312px;
+    height: 48px;
+    border-radius: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.watchLaterButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 312px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: sans-serif;
+    gap: 10px;
+    cursor: pointer;
+
+}
