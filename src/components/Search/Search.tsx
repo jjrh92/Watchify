@@ -146,6 +146,8 @@ export function Search({ variant = "all" }: SearchProps) {
           autoComplete="off"
           aria-label="Search"
           value={query}
+          id="searchInput"
+          name="searchInput"
           onChange={(event) => {
             const nextValue = event.target.value;
             setQuery(nextValue);
