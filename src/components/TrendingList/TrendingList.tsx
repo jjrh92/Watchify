@@ -7,7 +7,7 @@ import {
   removeFromWatchlist,
 } from "../ContentCard/contentCard.utils";
 import { type ContentData, ContentModal } from "../ContentModal/ContentModal";
-import styles from "./TrendingList.module.css";
+import styles from "./trendingList.module.css";
 
 type TrendingVariant = "all" | "movies" | "series";
 
