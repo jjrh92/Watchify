@@ -109,7 +109,7 @@ export function ContentModal({
                   <span className={styles.chip}>Language: {content.original_language.toUpperCase()}</span>
                 )}
                 {typeof content.vote_average === 'number' && (
-                  <span className={styles.chip}>Score {content.vote_average.toFixed(1)}</span>
+                  <span className={styles.chip}>Score {content.vote_average.toFixed(1)}/10</span>
                 )}
                 {typeof content.vote_count === 'number' && (
                   <span className={styles.chip}>{content.vote_count} TMDB Ratings</span>
