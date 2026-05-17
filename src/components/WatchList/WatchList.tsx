@@ -7,7 +7,7 @@ import {
   removeFromWatchlist,
 } from "../ContentCard/contentCard.utils";
 import { type ContentData, ContentModal } from "../ContentModal/ContentModal";
-import styles from "./watchList.module.css";
+import styles from "./WatchList.module.css";
 
 interface WatchListProps {
   accountId?: number;

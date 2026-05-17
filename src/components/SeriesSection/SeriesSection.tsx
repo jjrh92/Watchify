@@ -1,7 +1,7 @@
 import { Search } from '../Search/Search';
 import { TrendingList } from '../TrendingList/TrendingList';
 import { WatchList } from '../WatchList/WatchList';
-import styles from './seriesSection.module.css';
+import styles from './SeriesSection.module.css';
 
 export function SeriesSection() {
   return (

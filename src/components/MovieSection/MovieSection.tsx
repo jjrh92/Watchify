@@ -1,7 +1,7 @@
 import { Search } from '../Search/Search';
 import { TrendingList } from '../TrendingList/TrendingList';
 import { WatchList } from '../WatchList/WatchList';
-import styles from './movieSection.module.css';
+import styles from './MovieSection.module.css';
 
 export function MovieSection() {
   return (

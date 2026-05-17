@@ -8,7 +8,7 @@ import {
 } from "../ContentCard/contentCard.utils";
 import { type ContentData, ContentModal } from "../ContentModal/ContentModal";
 import { SearchModal } from "../SearchModal/SearchModal";
-import styles from "./search.module.css";
+import styles from "./Search.module.css";
 
 type SearchVariant = "all" | "movies" | "series";
 

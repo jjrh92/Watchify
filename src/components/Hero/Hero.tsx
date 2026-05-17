@@ -5,7 +5,7 @@ import {
   getMovieTrailer,
   getTopWeekMovie,
 } from '../../services/movies/movies.services';
-import styles from './hero.module.css';
+import styles from './Hero.module.css';
 
 type TopWeekMovie = {
   id: number;

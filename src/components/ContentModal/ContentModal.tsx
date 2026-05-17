@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import styles from './contentModal.module.css';
+import styles from './ContentModal.module.css';
 
 export type MediaType = 'movie' | 'tv';
 

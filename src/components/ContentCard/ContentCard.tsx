@@ -1,7 +1,7 @@
 import type { KeyboardEvent, MouseEvent } from "react";
 import type { ContentData } from "../ContentModal/ContentModal";
 import { addToWatchlist, removeFromWatchlist } from "./contentCard.utils";
-import styles from "./contentCard.module.css";
+import styles from "./ContentCard.module.css";
 
 type CardVariant = "trendingList" | "watchList";
 

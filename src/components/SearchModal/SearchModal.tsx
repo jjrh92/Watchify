@@ -1,5 +1,5 @@
 import { type ReactNode, useEffect } from 'react';
-import styles from './searchModal.module.css';
+import styles from './SearchModal.module.css';
 
 interface SearchModalProps {
   children: ReactNode;
