@@ -24,7 +24,7 @@ export function Header({ currentRoute = '/', onNavigate }: HeaderProps) {
         <nav className={styles.linksContainer} aria-label="Content">
           <a
             className={`${styles.contentLink} ${currentRoute === '/movies' ? styles.activeContentLink : ''}`}
-            href="/peliculas"
+            href="/movies"
             aria-current={currentRoute === '/movies' ? 'page' : undefined}
             onClick={(event) => handleNav(event, '/movies', onNavigate)}
           >

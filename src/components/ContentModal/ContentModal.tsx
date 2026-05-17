@@ -103,7 +103,7 @@ export function ContentModal({
               </h3>
 
               <div className={styles.detailChips}>
-                {movie && <span className={styles.chip}>Pelicula</span>}
+                {movie && <span className={styles.chip}>Movie</span>}
                 {series && <span className={styles.chip}>Series</span>}
                 {content.original_language && (
                   <span className={styles.chip}>Language: {content.original_language.toUpperCase()}</span>
