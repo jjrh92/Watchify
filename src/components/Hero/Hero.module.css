@@ -1,130 +1,202 @@
 .Hero {
-    height: 567px;
-    width: 100%;
-    display: flex;
-    justify-content: start;
+  min-height: 567px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Dark overlay so text stays readable on all backgrounds */
+.Hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.45) 45%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+  pointer-events: none;
 }
 
 .heroContainer {
-    width: 668px;
-    height: 399px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    margin-left: 40px;
-    gap: 22px;
+  position: relative;
+  z-index: 1;
+  width: min(668px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 
 .scoreContainer {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 20px;
-    width: 158px;
-    height: 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
 .scoreCaption {
-    color: white;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+  color: white;
+  font-family: sans-serif;
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 400;
 }
 
 .scoreStarRatingContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
 
-
-
 .scoreRating {
-    color: white;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+  color: white;
+  font-family: sans-serif;
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 700;
 }
 
 .titleYearGenreContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 160px;
-    width: 100%;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
 }
 
 .contentTitle {
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 60px;
-    margin: 0;
-    width: 100%;
-
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: clamp(36px, 8vw, 60px);
+  line-height: 1.05;
+  margin: 0;
+  width: 100%;
 }
 
 .titleYearGenreText {
-    font-size: 24px;
-    color: white;
-    font-family: sans-serif;
-    margin: 0;
+  font-size: clamp(18px, 4vw, 24px);
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
 }
 
 .contentDescription {
-    display: flex;
-    color: white;
-    width: 668px;
-    height: 77px;
-    font-family: sans-serif;
-    font-size: 14px;
-    line-height: 180%;
-    margin-top: 40px;
+  color: white;
+  width: 100%;
+  max-width: 668px;
+  font-family: sans-serif;
+  font-size: clamp(13px, 2vw, 14px);
+  line-height: 180%;
+  margin: 0;
 }
 
 .heroButtonContainer {
-    display: flex;
-    width: 664px;
-    height: 48px;
-    gap: 44px;
-    margin-top: 30px;
+  display: flex;
+  width: 100%;
+  max-width: 664px;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.trailerButton,
+.watchLaterButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-height: 48px;
+  border-radius: 24px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: clamp(16px, 2vw, 18px);
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .trailerButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    color: #233647;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    width: 312px;
-    height: 48px;
-    border-radius: 24px;
-    cursor: pointer;
-    text-decoration: none;
+  background-color: white;
+  color: #233647;
 }
 
 .watchLaterButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 312px;
-    height: 48px;
-    border-radius: 24px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: sans-serif;
-    gap: 10px;
-    cursor: pointer;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  gap: 10px;
+}
 
+.watchLaterButton img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .Hero {
+    min-height: 620px;
+    padding: 32px 24px;
+    align-items: flex-end;
+  }
+
+  .Hero::before {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0.7) 55%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+  }
+
+  .heroContainer {
+    gap: 18px;
+  }
+
+  .scoreContainer {
+    margin-bottom: 4px;
+  }
+
+  .heroButtonContainer {
+    gap: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .Hero {
+    min-height: 640px;
+    padding: 24px 16px;
+  }
+
+  .contentTitle {
+    font-size: clamp(32px, 12vw, 44px);
+  }
+
+  .titleYearGenreText {
+    font-size: 18px;
+  }
+
+  .contentDescription {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .heroButtonContainer {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .trailerButton,
+  .watchLaterButton {
+    width: 100%;
+    flex: none;
+  }
 }
